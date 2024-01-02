@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-for i in range(99):
-    print("(:d) = 0x{:x}".format(i, i))
+# Start the loop from 0 to 98
+for num in range(99):
+    # Use string formatting to print the number in both decimal and hexadecimal formats
+    print(f"{num} = 0x{num:x}")
+

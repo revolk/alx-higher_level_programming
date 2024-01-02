@@ -1,12 +1,16 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    for i in range(1, 101):
-        if i % 15 == 0:
+    for num in range(1, 101):
+        if num % 3 == 0 and num % 5 == 0:
             print("FizzBuzz", end=" ")
-        elif i % 5 == 0:
-            print("Buzz", end=" ")
-        elif i % 3 == 0:
+        elif num % 3 == 0:
             print("Fizz", end=" ")
+        elif num % 5 == 0:
+            print("Buzz", end=" ")
         else:
-            print("{:d}".format(i), end=" ")
+            print(num, end=" ")
+
+# Test the function
+fizzbuzz()
+print()  # Print a newline character at the end
 
